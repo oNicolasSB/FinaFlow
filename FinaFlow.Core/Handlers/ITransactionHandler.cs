@@ -1,4 +1,4 @@
-using System.Transactions;
+using FinaFlow.Core.Models;
 using FinaFlow.Core.Requests.Transactions;
 using FinaFlow.Core.Responses;
 

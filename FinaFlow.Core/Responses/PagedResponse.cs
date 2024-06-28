@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace FinaFlow.Core.Responses;
 
-public abstract class PagedResponse<TData> : Response<TData>
+public class PagedResponse<TData> : Response<TData>
 {
     [JsonConstructor]
     public PagedResponse(TData? data, int totalCount, int currentPage = 1, int pageSize = Configuration.DefaultPageSize, string? message = null) : base(data)
