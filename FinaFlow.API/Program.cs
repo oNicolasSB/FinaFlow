@@ -17,5 +17,6 @@ if(app.Environment.IsDevelopment())
 
 app.UseCors(ApiConfiguration.CorsPolicyName);
 app.MapEndpoints();
+app.UseHttpsRedirection();
 
 app.Run();
